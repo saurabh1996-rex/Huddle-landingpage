@@ -20,7 +20,8 @@ body {
   font-family: var(--Font1);
 }
 
-body h1, body h2 {
+body h1,
+body h2 {
   font-family: var(--Font2);
   color: var(--Very-Dark-Cyan);
 }
@@ -46,7 +47,7 @@ body .section1 header .cta {
   background-color: transparent;
   outline: none;
   border: 1px solid var(--Pink);
-  padding: .3rem 1rem;
+  padding: 0.3rem 1rem;
   border-radius: 3rem;
   font-family: var(--Font1);
   color: var(--Pink);
@@ -72,16 +73,6 @@ body .section1 .container h1 {
 body .section1 .container p {
   color: var(--Very-Dark-Cyan);
   margin-bottom: 3rem;
-}
-
-body .section1 .container .mainCta {
-  padding: 1rem 2rem;
-  background-color: var(--Pink);
-  border-radius: 3rem;
-  border: none;
-  outline: none;
-  color: var(--Very-Pale-Blue);
-  font-weight: 600;
 }
 
 body .section2 {
@@ -129,23 +120,79 @@ body .section2 .container .next {
   margin-bottom: 0;
 }
 
-body .section3 .mobile {
-  width: 100%;
-}
-
-body .section3 .desktop {
-  display: none;
-}
-
-body .section3 .main {
+body .section4 {
   padding: 3rem 2rem;
 }
 
-body .section3 .main .header {
+body .section6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  height: 80vh;
+}
+
+body .section6 h1 {
+  margin-bottom: 2rem;
+}
+
+body .main {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+body .main .header {
+  margin-bottom: 2rem;
+}
+
+body .main .header img {
+  width: 100%;
+}
+
+body .main h2 {
+  padding-bottom: 1rem;
+}
+
+body .mobile {
+  width: 100%;
+}
+
+body .desktop {
+  display: none;
+}
+
+body .pale {
+  background-color: var(--Very-Pale-Blue);
+  padding: 5rem 2rem;
+  margin: -0.3rem 0;
+}
+
+body .pale .header {
   padding: 0 2rem;
 }
 
-body .section3 .main .header img {
-  width: 100%;
+body .mainCta {
+  padding: 1rem 2.5rem;
+  background-color: var(--Pink);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  color: var(--Very-Pale-Blue);
+  font-weight: 600;
+}
+
+body .mainCta:hover {
+  background-color: var(--Light-Pink);
 }
 /*# sourceMappingURL=style.css.map */

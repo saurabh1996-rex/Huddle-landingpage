@@ -1,111 +1,141 @@
 @import "common";
 @import "variable";
 
-body{
-    font-family: var(--Font1);
-    h1,h2{
-        font-family: var(--Font2);
+body {
+  font-family: var(--Font1);
+  h1,
+  h2 {
+    font-family: var(--Font2);
+    color: var(--Very-Dark-Cyan);
+  }
+  .section1 {
+    header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        a {
+          img {
+            width: 50%;
+          }
+        }
+      }
+      .cta {
+        background-color: transparent;
+        outline: none;
+        border: 1px solid var(--Pink);
+        padding: 0.3rem 1rem;
+        border-radius: 3rem;
+        font-family: var(--Font1);
+        color: var(--Pink);
+        transition: all 0.3s ease-in;
+        &:hover {
+          color: var(--Light-Pink);
+          border: 1px solid var(--Light-Pink);
+        }
+      }
+    }
+
+    .container {
+      padding: 3rem 2rem;
+      text-align: center;
+      h1 {
+        padding: 0 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      p {
         color: var(--Very-Dark-Cyan);
+        margin-bottom: 3rem;
+      }
     }
-    .section1{
-        header{
-            padding: 2rem; 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .logo{
-                a{
-                    img{
-                        width: 50%;
-                    }
-                }
-            }
-            .cta{
-                background-color: transparent;
-                outline: none;
-                border: 1px solid var(--Pink);
-                padding: .3rem 1rem;
-                border-radius: 3rem;
-                font-family: var(--Font1);
-                color: var(--Pink);
-                transition: all 0.3s ease-in;
-                &:hover{
-                    color:var(--Light-Pink);
-                    border: 1px solid var(--Light-Pink);
+  }
 
-                }
-            }
-        }
-
-        .container{
-            padding: 3rem 2rem;
-            text-align: center;
-            h1{
-                padding: 0 1.5rem;
-                margin-bottom: 1.5rem;
-            }
-            p{
-                color: var(--Very-Dark-Cyan);
-                margin-bottom: 3rem;
-            }
-            .mainCta{
-                padding: 1rem 2rem;
-                background-color: var(--Pink);
-                border-radius: 3rem;
-                border: none;
-                outline: none;
-                color: var(--Very-Pale-Blue);
-                font-weight: 600;             
-            }
-        }
+  .section2 {
+    padding: 3rem 2rem 0 2rem;
+    .headerImage {
+      img {
+        width: 100%;
+      }
     }
 
-    .section2{
-        padding: 3rem 2rem 0 2rem;
-        .headerImage{
-            img{width: 100%;}
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 0;
+      .social {
+        margin-bottom: 5rem;
+        img {
+          width: 20%;
         }
-        
-        .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 3rem 0;
-            .social{
-                margin-bottom: 5rem;
-                img{
-                    width: 20%;
-                }
-                .social-cont{
-                    text-align: center;
-                    h1{
-                        font-size: 3.5rem;
-                    }
-                }
-            }
-            .next{
-                margin-bottom: 0;
-            }
+        .social-cont {
+          text-align: center;
+          h1 {
+            font-size: 3.5rem;
+          }
         }
+      }
+      .next {
+        margin-bottom: 0;
+      }
     }
+  }
 
-    .section3{
-        .mobile{
-            width: 100%;
-        }
-        .desktop{
-            display: none;
-        }
+  .section4 {
+    padding: 3rem 2rem;
+  }
 
-        .main{
-            padding: 3rem 2rem;
-            .header{
-                padding: 0 2rem;
-                img{
-                    width: 100%;
-                }
-            }
-        }
+  .section6{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 2rem;
+      text-align: center;
+      height: 80vh;
+      h1{
+          margin-bottom: 2rem;
+      }
+  }
+  .main {
+    padding: 5rem 2rem;
+    text-align: center;
+    .header {
+      margin-bottom: 2rem;
+      img {
+        width: 100%;
+      }
     }
+    h2 {
+      padding-bottom: 1rem;
+    }
+  }
+  .mobile {
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
+  .pale {
+    background-color: var(--Very-Pale-Blue);
+    padding: 5rem 2rem;
+    margin: -0.3rem 0;
+    .header{
+        padding:0 2rem ;
+    }
+  }
+  .mainCta {
+    padding: 1rem 2.5rem;
+    background-color: var(--Pink);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    color: var(--Very-Pale-Blue);
+    font-weight: 600;
+    &:hover{
+        background-color: var(--Light-Pink);
+    }
+  }
 }
