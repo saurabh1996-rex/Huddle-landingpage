@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
+  --Font1:'Open Sans', sans-serif;
+  --Font2:'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--Font1);
+}
+
+body h1, body h2 {
+  font-family: var(--Font2);
+  color: var(--Very-Dark-Cyan);
+}
+
+body .section1 header {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .section1 header .logo a img {
+  width: 50%;
+}
+
+body .section1 header .cta {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--Pink);
+  padding: .3rem 1rem;
+  border-radius: 3rem;
+  font-family: var(--Font1);
+  color: var(--Pink);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+body .section1 header .cta:hover {
+  color: var(--Light-Pink);
+  border: 1px solid var(--Light-Pink);
+}
+
+body .section1 .container {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+body .section1 .container h1 {
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+body .section1 .container p {
+  color: var(--Very-Dark-Cyan);
+  margin-bottom: 3rem;
+}
+
+body .section1 .container .mainCta {
+  padding: 1rem 2rem;
+  background-color: var(--Pink);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  color: var(--Very-Pale-Blue);
+  font-weight: 600;
+}
+
+body .section2 {
+  padding: 3rem 2rem 0 2rem;
+}
+
+body .section2 .headerImage img {
+  width: 100%;
+}
+
+body .section2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+body .section2 .container .social {
+  margin-bottom: 5rem;
+}
+
+body .section2 .container .social img {
+  width: 20%;
+}
+
+body .section2 .container .social .social-cont {
+  text-align: center;
+}
+
+body .section2 .container .social .social-cont h1 {
+  font-size: 3.5rem;
+}
+
+body .section2 .container .next {
+  margin-bottom: 0;
+}
+
+body .section3 .mobile {
+  width: 100%;
+}
+
+body .section3 .desktop {
+  display: none;
+}
+
+body .section3 .main {
+  padding: 3rem 2rem;
+}
+
+body .section3 .main .header {
+  padding: 0 2rem;
+}
+
+body .section3 .main .header img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
