@@ -53,6 +53,7 @@ body .section1 header .cta {
   color: var(--Pink);
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  font-family: var(--Font2);
 }
 
 body .section1 header .cta:hover {
@@ -188,11 +189,109 @@ body .mainCta {
   border-radius: 3rem;
   border: none;
   outline: none;
+  font-family: var(--Font2);
   color: var(--Very-Pale-Blue);
   font-weight: 600;
 }
 
 body .mainCta:hover {
   background-color: var(--Light-Pink);
+}
+
+body footer {
+  color: var(--Very-Pale-Blue);
+}
+
+body footer img {
+  margin-bottom: -0.5rem;
+}
+
+body footer .maincontainer {
+  background-color: var(--Very-Dark-Cyan);
+  padding: 3rem 2rem;
+}
+
+body footer .maincontainer .container {
+  padding-bottom: 1rem;
+}
+
+body footer .maincontainer .container h1 {
+  text-transform: uppercase;
+  color: var(--Very-Pale-Blue);
+  margin-bottom: 1rem;
+}
+
+body footer .maincontainer .container form {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body footer .maincontainer .container form input {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--Very-Pale-Blue);
+  margin-bottom: 1rem;
+  font-family: var(--Font2);
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+body footer .maincontainer .container form button {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  background-color: var(--Pink);
+  color: var(--Very-Pale-Blue);
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: var(--Font2);
+}
+
+body footer .maincontainer .container .logo {
+  padding-bottom: 1rem;
+}
+
+body footer .maincontainer .container .logo svg path {
+  fill: var(--Very-Pale-Blue);
+}
+
+body footer .maincontainer .container p span {
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+
+body footer .maincontainer .container p .phone {
+  padding: 0 0 0 1rem;
+  font-size: 1.2rem;
+}
+
+body footer .maincontainer .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body footer .maincontainer .container ul li {
+  padding-right: .5rem;
+}
+
+body footer .maincontainer .container ul li a {
+  font-size: 1.5rem;
+  color: var(--Very-Pale-Blue);
 }
 /*# sourceMappingURL=style.css.map */
