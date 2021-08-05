@@ -53,7 +53,6 @@ body .section1 header .cta {
   color: var(--Pink);
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  font-family: var(--Font2);
 }
 
 body .section1 header .cta:hover {
@@ -208,11 +207,11 @@ body footer img {
 
 body footer .maincontainer {
   background-color: var(--Very-Dark-Cyan);
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 1rem 2rem;
 }
 
 body footer .maincontainer .container {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 body footer .maincontainer .container h1 {
@@ -261,6 +260,10 @@ body footer .maincontainer .container form button {
   font-family: var(--Font2);
 }
 
+body footer .maincontainer .container form button:hover {
+  background-color: var(--Light-Pink);
+}
+
 body footer .maincontainer .container .logo {
   padding-bottom: 1rem;
 }
@@ -284,14 +287,107 @@ body footer .maincontainer .container ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body footer .maincontainer .container ul li {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 body footer .maincontainer .container ul li a {
   font-size: 1.5rem;
   color: var(--Very-Pale-Blue);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+body footer .maincontainer .container ul li a:hover {
+  color: var(--Pink);
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  body .section1 .container p {
+    padding: 0 10rem;
+  }
+  body .section2 {
+    padding: 3rem 3rem 0 3rem;
+  }
+  body .section2 .headerImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .section2 .headerImage img {
+    width: 75%;
+  }
+  body .section2 .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 5rem 0 3rem 0;
+  }
+  body .section2 .container .social {
+    margin-bottom: 0;
+  }
+  body .mobile {
+    display: none;
+  }
+  body .desktop {
+    display: block;
+    width: 100%;
+  }
+  body .pale {
+    padding: 3rem 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .pale .header {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  body .section4 {
+    padding: 0;
+  }
+  body .section4 .main {
+    padding: 3rem 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .description {
+    text-align: left;
+    padding-right: 3rem;
+  }
+  body .left {
+    padding-left: 3rem;
+    padding-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

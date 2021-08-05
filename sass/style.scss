@@ -30,8 +30,6 @@ body {
         font-family: var(--Font1);
         color: var(--Pink);
         transition: all 0.3s ease-in;
-        font-family: var(--Font2);
-
         &:hover {
           color: var(--Light-Pink);
           border: 1px solid var(--Light-Pink);
@@ -149,9 +147,9 @@ body {
     }
     .maincontainer {
       background-color: var(--Very-Dark-Cyan);
-      padding: 3rem 2rem;
+      padding: 3rem 2rem 1rem 2rem;
       .container {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         h1 {
           text-transform: uppercase;
           color: var(--Very-Pale-Blue);
@@ -185,38 +183,114 @@ body {
             font-weight: 600;
             font-size: 1rem;
             font-family: var(--Font2);
+            &:hover {
+              background-color: var(--Light-Pink);
+            }
           }
         }
-        .logo{
+        .logo {
           padding-bottom: 1rem;
-          svg{
-            path{
+          svg {
+            path {
               fill: var(--Very-Pale-Blue);
             }
           }
         }
-        p{
-          span{
+        p {
+          span {
             padding-right: 1rem;
             font-size: 1.5rem;
           }
-          .phone{
-            padding:0 0 0 1rem;
+          .phone {
+            padding: 0 0 0 1rem;
             font-size: 1.2rem;
           }
         }
-        ul{
+        ul {
           display: flex;
           list-style: none;
-          li{
-            padding-right: .5rem;
-            a{
+          align-items: center;
+          li {
+            padding-right: 0.5rem;
+            a {
               font-size: 1.5rem;
               color: var(--Very-Pale-Blue);
+              transition: all 0.3s ease-in;
+              &:hover {
+                color: var(--Pink);
+                font-size: 1.8rem;
+              }
             }
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    .section1 {
+      .container {
+        p {
+          padding: 0 10rem;
+        }
+      }
+    }
+    .section2 {
+      padding: 3rem 3rem 0 3rem;
+      .headerImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 75%;
+        }
+      }
+      .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5rem 0 3rem 0;
+        .social {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block;
+      width: 100%;
+    }
+
+    .pale {
+      padding: 3rem 5rem;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      .header {
+        margin-bottom: 0;
+        padding: 0;
+      }
+    }
+
+    .section4 {
+      padding: 0;
+      .main {
+        padding: 3rem 5rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .description {
+      text-align: left;
+      padding-right: 3rem;
+    }
+    .left{
+      padding-left: 3rem;
+      padding-right: 0;
     }
   }
 }
