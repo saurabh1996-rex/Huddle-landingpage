@@ -148,6 +148,9 @@ body {
     .maincontainer {
       background-color: var(--Very-Dark-Cyan);
       padding: 3rem 2rem 1rem 2rem;
+      .main{
+        text-align: left;
+      }
       .container {
         padding-bottom: 2rem;
         h1 {
